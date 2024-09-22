@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending</title>
+</head>
+
+<body>
+    <div class="menu-principal">
+        <div class="titulo">
+            <h2>Bienvenido</h2>
+            <p>Menu principal</p>
+        </div>
+        <div id="menu-principal">
+            <div id="select-menu1">
+                <button class="boton-menu" name="opcion" id="select-ver-listado-destinos">1. Ver listado de bebidas</button>
+            </div>
+            <div id="select-menu2">
+                <button class="boton-menu" name="opcion" id="select-reservar-vuelo">2. Comprar bebida</button>
+            </div>
+        </div>
+
+        <div id="menu-listado-bebidas">
+            <p>Bebidas disponibles</p>
+            <ul>
+                <li>Coca-Cola</li>
+                <li>Agua</li>
+                <li>Fanta</li>
+                <li>Café</li>                
+            </ul>          
+        <div id="menu-comprar-bebida">
+            <form action="procesar-pedido.php" method="post" id="form-pedido-cliente">               
+
+                <div id="bebidas">
+                    <label for="cars">Seleccione una bebida:</label><br>
+                    <select name="bebida-seleccionada" id="desplegable-bebidas">
+                        <option value=""></option>
+                        <option value="coca-cola">Coca-Cola</option>
+                        <option value="agua">Agua</option>
+                        <option value="fanta">Fanta</option>
+                        <option value="cafe">Café</option>
+                    </select>
+                </div>
+               
+                <div id="regresar-a-menu">
+                    <input class="boton-menu" type="button" name="comprar-bebida" id="realizar-pedido"
+                        value="Regresar al menú principal">
+                </div>
+
+                <div id="comprar">
+                    <input class="boton-menu" type="submit" name="comprar-bebida" id="realizar-pedido"
+                        value="Comprar">
+                </div>
+        </div>
+        <div id="menu-mostrar-pedido-completo">
+            <h2>Detalles de su pedido: </h2>
+        </div>
+    </div>    
+</body>
+</html>
